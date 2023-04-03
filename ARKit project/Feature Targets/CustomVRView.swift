@@ -20,5 +20,28 @@ class CustomARView: ARView {
     
     convenience init() {
         self.init(frame: UIScreen.main.bounds)
+        
+    }
+    
+    func configurationExample() {
+        let configuration = ARWorldTrackingConfiguration()
+        session.run(configuration)
+        
+        let _ = ARGeoTrackingConfiguration()
+        
+        let _ = ARBodyTrackingConfiguration()
+    }
+    
+    func anchorExample() {
+        let coordinateAnchor = AnchorEntity(world: .zero)
+        
+        let _ = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: .zero))
+        let _ = AnchorEntity(.plane(.vertical, classification: .any, minimumBounds: .zero))
+        
+        let _ = AnchorEntity(.face)
+        
+        let _ = AnchorEntity(.image(group: "group", name: "name"))
+                
+        scene.addAnchor(coordinateAnchor)
     }
 }

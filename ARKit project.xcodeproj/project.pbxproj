@@ -14,6 +14,8 @@
 		47848BDF29DB3B5D00706D36 /* ARKit_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47848BDE29DB3B5D00706D36 /* ARKit_projectTests.swift */; };
 		47848BE929DB3B5D00706D36 /* ARKit_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47848BE829DB3B5D00706D36 /* ARKit_projectUITests.swift */; };
 		47848BEB29DB3B5D00706D36 /* ARKit_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47848BEA29DB3B5D00706D36 /* ARKit_projectUITestsLaunchTests.swift */; };
+		47848BF929DB3D0D00706D36 /* CustomVRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47848BF829DB3D0D00706D36 /* CustomVRView.swift */; };
+		47848BFB29DB3DDE00706D36 /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47848BFA29DB3DDE00706D36 /* CustomARViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		47848BE429DB3B5D00706D36 /* ARKit projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47848BE829DB3B5D00706D36 /* ARKit_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_projectUITests.swift; sourceTree = "<group>"; };
 		47848BEA29DB3B5D00706D36 /* ARKit_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		47848BF829DB3D0D00706D36 /* CustomVRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVRView.swift; sourceTree = "<group>"; };
+		47848BFA29DB3DDE00706D36 /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		47848BCC29DB3B5C00706D36 /* ARKit project */ = {
 			isa = PBXGroup;
 			children = (
+				47848BF729DB3CD000706D36 /* Feature Targets */,
 				47848BCD29DB3B5C00706D36 /* ARKit_projectApp.swift */,
-				47848BCF29DB3B5C00706D36 /* ContentView.swift */,
 				47848BD129DB3B5D00706D36 /* Assets.xcassets */,
 				47848BD329DB3B5D00706D36 /* Preview Content */,
 			);
@@ -125,6 +129,16 @@
 				47848BEA29DB3B5D00706D36 /* ARKit_projectUITestsLaunchTests.swift */,
 			);
 			path = "ARKit projectUITests";
+			sourceTree = "<group>";
+		};
+		47848BF729DB3CD000706D36 /* Feature Targets */ = {
+			isa = PBXGroup;
+			children = (
+				47848BCF29DB3B5C00706D36 /* ContentView.swift */,
+				47848BF829DB3D0D00706D36 /* CustomVRView.swift */,
+				47848BFA29DB3DDE00706D36 /* CustomARViewRepresentable.swift */,
+			);
+			path = "Feature Targets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47848BF929DB3D0D00706D36 /* CustomVRView.swift in Sources */,
 				47848BD029DB3B5C00706D36 /* ContentView.swift in Sources */,
 				47848BCE29DB3B5C00706D36 /* ARKit_projectApp.swift in Sources */,
+				47848BFB29DB3DDE00706D36 /* CustomARViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,8 +433,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARKit project/Preview Content\"";
+				DEVELOPMENT_TEAM = YL9AB8R8B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to show AR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +463,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARKit project/Preview Content\"";
+				DEVELOPMENT_TEAM = YL9AB8R8B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to show AR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

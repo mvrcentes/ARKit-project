@@ -20,7 +20,8 @@ class CustomARView: ARView {
     
     convenience init() {
         self.init(frame: UIScreen.main.bounds)
-        
+            
+        placeBlueBlock()
     }
     
     func configurationExample() {
@@ -57,5 +58,14 @@ class CustomARView: ARView {
         anchor.addChild(entity)
     }
     
-    
+    func placeBlueBlock() {
+        let block = MeshResource.generateBox(size: 1)
+        let material  = SimpleMaterial(color: .blue, isMetallic: false)
+        let entity = ModelEntity(mesh: block, materials: [material])
+        
+        let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: .one))
+        anchor.addChild(entity)
+        
+        scene.addAnchor(anchor)
+    }
 }

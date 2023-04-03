@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4701AA8C29DB662D00B7CF54 /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701AA8B29DB662D00B7CF54 /* ARAction.swift */; };
 		47848BCE29DB3B5C00706D36 /* ARKit_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47848BCD29DB3B5C00706D36 /* ARKit_projectApp.swift */; };
 		47848BD029DB3B5C00706D36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47848BCF29DB3B5C00706D36 /* ContentView.swift */; };
 		47848BD229DB3B5D00706D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47848BD129DB3B5D00706D36 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4701AA8B29DB662D00B7CF54 /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
 		47848BCA29DB3B5C00706D36 /* ARKit project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47848BCD29DB3B5C00706D36 /* ARKit_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_projectApp.swift; sourceTree = "<group>"; };
 		47848BCF29DB3B5C00706D36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				47848BCF29DB3B5C00706D36 /* ContentView.swift */,
 				47848BF829DB3D0D00706D36 /* CustomVRView.swift */,
 				47848BFA29DB3DDE00706D36 /* CustomARViewRepresentable.swift */,
+				4701AA8B29DB662D00B7CF54 /* ARAction.swift */,
 			);
 			path = "Feature Targets";
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47848BF929DB3D0D00706D36 /* CustomVRView.swift in Sources */,
+				4701AA8C29DB662D00B7CF54 /* ARAction.swift in Sources */,
 				47848BD029DB3B5C00706D36 /* ContentView.swift in Sources */,
 				47848BCE29DB3B5C00706D36 /* ARKit_projectApp.swift in Sources */,
 				47848BFB29DB3DDE00706D36 /* CustomARViewRepresentable.swift in Sources */,

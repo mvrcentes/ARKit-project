@@ -44,4 +44,18 @@ class CustomARView: ARView {
                 
         scene.addAnchor(coordinateAnchor)
     }
+    
+    func entityExample() {
+        let _ = try? Entity.load(named: "usdzFileName")
+        
+        let _ = try? Entity.load(named: "realityFileName")
+        
+        let box = MeshResource.generateBox(size: 1)
+        let entity = ModelEntity(mesh: box)
+        
+        let anchor = AnchorEntity()
+        anchor.addChild(entity)
+    }
+    
+    
 }
